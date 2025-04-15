@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+//En cada Layout(o cualquier componente) puedo configurar propiedades metadata
+export const metadata = {
+	title: "Tienda Oficial",
+}
+
 function TiendaLayout({ children }) {
     return <>
         <nav>

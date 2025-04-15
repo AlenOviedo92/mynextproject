@@ -7,6 +7,12 @@
 
 import Navbar from "../components/Navbar";
 
+export const metadata = {
+	title: "My tienda con Next.js",
+	description: "Esta es la página principal de mi tienda",
+	keywords: "tienda, online, ecommerce"
+}
+
 export default function RootLayout({ children }) {
   return (
 	//La etiqueta html solo se crea en el layout inicial
