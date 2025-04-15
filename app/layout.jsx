@@ -9,6 +9,7 @@ import Navbar from "../components/Navbar";
 
 export default function RootLayout({ children }) {
   return (
+	//La etiqueta html solo se crea en el layout inicial
     <html lang="en">
 		{/* 
 		Esto no es necesario porque Next.js lo agrega con metadata
