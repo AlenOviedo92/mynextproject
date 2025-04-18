@@ -1,5 +1,5 @@
 // import Users from "../components/Users";
-import Users from "@/components/Users";
+import Users from "@/src/components/Users";
 // import { useState } from "react";
 
 //El metadata solo funciona en componentes del lado del servidor

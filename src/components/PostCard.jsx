@@ -1,8 +1,12 @@
 "use client"
 import Link from "next/link";
+import { useParams } from "next/navigation";
 
 // Este es un React Client Component RCC
 function PostCard({ post }) {
+    const params = useParams()
+    console.log({params})
+
     return(
         <div>
             <Link href={`/posts/${post.id}`}>

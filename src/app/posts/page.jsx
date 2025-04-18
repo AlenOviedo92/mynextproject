@@ -1,5 +1,5 @@
 // import PostCard from "../../components/PostCard";
-import PostCard from "@/components/PostCard";
+import PostCard from "@/src/components/PostCard";
 import "./Posts.css";
 
 async function loadPosts() {    //Esta fn hace la petición al backend
