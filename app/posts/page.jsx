@@ -1,10 +1,12 @@
-import PostCard from "../../components/PostCard";
+// import PostCard from "../../components/PostCard";
+import PostCard from "@/components/PostCard";
+import "./Posts.css";
 
 async function loadPosts() {    //Esta fn hace la petición al backend
     const res = await fetch('https://jsonplaceholder.typicode.com/posts')
     const data = await res.json()
 
-    await new Promise((resolve) => setTimeout(resolve, 5000))   //Para que la carga de datos demore 3 seg, mientras tanto muestra el componente LoadingPage
+    // await new Promise((resolve) => setTimeout(resolve, 5000))   //Para que la carga de datos demore 3 seg, mientras tanto muestra el componente LoadingPage
 
     return data
 }
@@ -14,7 +16,7 @@ async function Posts() {    //Este es el componente que renderiza en el frontend
     const posts = await loadPosts()
     console.log(posts)          //Este console.log se muestra en la consola del browser
     return(
-        <div>
+        <div className='grid'>
             { posts.map(post => (
                 <PostCard post={ post } key={ post.id } />
             )) }

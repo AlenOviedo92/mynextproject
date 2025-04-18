@@ -7,6 +7,7 @@
 
 import Navbar from "../components/Navbar";
 import { Roboto } from "next/font/google";	//Para importar diferentes tipos de letra
+import "./globals.css";
 
 export const metadata = {
 	title: "My tienda con Next.js",

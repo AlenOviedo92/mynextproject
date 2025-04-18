@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Aquí puedes poner tus estilos CSS personalizados */
+
+body {
+    background-color: #202020;
+    color: white;
+}

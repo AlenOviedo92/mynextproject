@@ -1,9 +1,12 @@
 import Link from "next/link";
+import "./Navbar.css";
 
 function Navbar() {
     return (
-        <nav>
-            <h1>Navbar</h1>
+        <nav className="navbar">
+            <Link href="/">
+                <h1 className="text-3xl font-bold">Curso de Next.js</h1>
+            </Link>
 
             <ul>
                 <li>
